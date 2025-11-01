@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mon Site Rose</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LE COEUR ROSE EN HAUT -->
+  <div class="header">
+    <img src="images/coeur-rose.png" alt="Coeur" class="coeur">
+    <h1>Ma Réservation</h1>
+  </div>
+
+  <!-- LES 4 SERVICES -->
+  <div class="services">
+
+    <div class="service" data-name="Fellation" data-price="50" data-minutes="20">
+      <img src="images/fellation.jpg" alt="">
+      <h3>Fellation</h3>
+      <p>50€ pour 20 minutes</p>
+      <button class="btn">Choisir</button>
+    </div>
+
+    <div class="service" data-name="Sexe" data-price="300" data-minutes="90">
+      <img src="images/sexe.jpg" alt="">
+      <h3>Sexe</h3>
+      <p>300€ pour 1h30</p>
+      <button class="btn">Choisir</button>
+    </div>
+
+    <div class="service" data-name="Sexe + Sodomie" data-price="500" data-minutes="90">
+      <img src="images/sexe-sodomie.jpg" alt="">
+      <h3>Sexe + Sodomie</h3>
+      <p>500€ pour 1h30</p>
+      <button class="btn">Choisir</button>
+    </div>
+
+    <div class="service" data-name="Sexcam" data-price="30" data-minutes="10">
+      <img src="images/sexcam.jpg" alt="">
+      <h3>Sexcam</h3>
+      <p>30€ pour 10 minutes</p>
+      <button class="btn">Choisir</button>
+    </div>
+
+  </div>
+
+  <!-- LA FENÊTRE QUI S'OUVRE -->
+  <div id="modal" class="modal">
+    <div class="modal-box">
+      <span class="close">X</span>
+      <h2 id="titre"></h2>
+      <img id="photo" src="" alt="" style="width:100%; border-radius:15px; margin:15px 0;">
+
+      <p>Durée de base : <span id="duree">?</span> min</p>
+      <p>Prix de base : <span id="prix">?</span>€</p>
+
+      <p>Ajouter du temps :</p>
+      <input type="range" id="temps-sup" min="0" max="60" value="0" step="5">
+      <p>+ <span id="min-sup">0</span> min → + <span id="prix-sup">0</span>€</p>
+
+      <h3>Total : <span id="total">0</span>€</h3>
+
+      <div style="margin-top:20px;">
+        <button style="background:#ff69b4; color:white; padding:12px 20px; border:none; border-radius:25px; margin:5px;">PayPal</button>
+        <button style="background:#ff1493; color:white; padding:12px 20px; border:none; border-radius:25px; margin:5px;">Carte</button>
+        <button style="background:#ff69b4; color:white; padding:12px 20px; border:none; border-radius:25px; margin:5px;">Crypto</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
